@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size:14px;
+}
+body{
+    font-size:1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#f3eae3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:90vh;
+}
+
+/*======= typography style ======*/
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:0.5em;
+}
+p{
+    font-size:1rem;
+    font-weight:500;
+    opacity:0.6;
+    margin-bottom:1.5em;
+}
+.small-title{
+    text-transform: uppercase;
+    letter-spacing:0.3em;
+}
+.price{
+    color:hsl(158, 36%, 37%);
+}
+.discount{
+    text-decoration: line-through;
+    font-size:1rem;
+    font-weight:500;
+    opacity:0.6;
+    margin-bottom:0.3em;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn{
+    background-color:hsl(158, 36%, 37%);
+    color:white;
+    padding:1em 2.5em;
+    display: inline-block;
+    transition:500ms;
+    border: none;
+    border-radius:0.5em;
+    font-weight:700;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:focus,
+.btn:hover{
+    background-color:#1a4031;
+}
+img{
+    width:100%;
+    object-fit: cover;
+}
+
+svg{
+    margin:0 0.5em;
+}
+
+/*======= mobile layout ======*/
+
+main{
+    width:95%;
+    max-width:600px;
+}
+.card{
+    background-color:white;
+    border-radius:0.8em;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title img{
+    border-radius:0.8em 0.8em 0 0;
+}
+.card-body{
+    padding:1.8em 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.discount{
+    margin:0 1em;
+}
+
+
+/*======= desktop layout ======*/
+
+@media (min-width: 600px)
+{
+    .card{
+        flex-direction: row;
+    }
+    .card-title{
+        width:50%;
+    }
+    .card-body{
+        width:50%;
+        padding:1.5em 2.5em;
+    }
+    .card-title img{
+        border-radius:0.8em 0 0 0.8em;
+        height:100%;
+        content: url(./images/image-product-desktop.jpg);
+    }
+}
